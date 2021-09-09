@@ -1,0 +1,43 @@
+.content {
+    width: 50%;
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+blockquote {
+    background-color: whitesmoke;
+    border-style: groove;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    max-width: 100%
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+=======
+>>>>>>> origin/main
+}
+
+/* .click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  margin: auto;
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(1.5);
+  cursor: zoom-out
+} */
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+>>>>>>> origin/main

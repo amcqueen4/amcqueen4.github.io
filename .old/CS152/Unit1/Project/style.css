@@ -1,0 +1,32 @@
+/* http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html */
+code {
+    background-color: rgb(250, 250, 250);
+    display: block;
+    padding: 10px;
+    border-style: groove;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+}
+
+.number {
+    color: green;
+}
+
+.function {
+    color: purple;
+}
+
+.keyword { 
+    color: blue;
+}
+
+.string {
+    color: orange;
+}
+
+.comment {
+    color: gray;
+}
