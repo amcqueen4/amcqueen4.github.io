@@ -1,1 +1,117 @@
+<html>
+    <head>
+        <title> Code Golfing </title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <!-- entire page content wrapped in a div so i can center the content and make it nicer to read; looks nicer on the actual site not the repl.it preview -->
 
+        <div class = "content">
+            <h1>Code Golfing</h1>
+            <p>Written by Andrew J. McQueen</p>
+
+            <h2>What is it?</h2>
+            <p>
+                Code golfing can be viewed as a <i>competitive genre</i> of coding. The goal, similar to golf, is to have the lowest score (characters in this case). The priority is not readability of the code, but instead is the compression of the code. 
+            </p>
+
+            <h2>Why do it?</h2>
+            <p>
+                <b>For fun!</b> The entire point is to get better at problem solving. It can require some serious work to understand to find the shortest solution to a problem in the language you are working with and being able to do so shows serious dedication with the language you are working with. 
+            </p>
+            
+            <h2>How can I do it?</h2>
+            <p>
+                There are plenty of ways you can do it. To start you will want to become exremely familiar with a language that you are working with. Golfing often requires hacky and messy tricks often overlooked or obscure in general.
+                <br>
+                <br>
+                Good languages for golfing, due to their simplicity or liberty in syntax include: 
+                <ol>
+                    <li>Ruby</li>
+                        <ul>
+                            <li>Extremely flexible syntax</li>
+                            <li>Lots of convenient features to abstract complexity</li>
+                            <li>Super easy to learn</li>
+                            <li>A very powerful golfing language.</li>
+                        </ul>
+                    <li>Lua</li>
+                        <ul>
+                            <li>Built to be very easy to learn</li>
+                            <li>Quirky features such as <a href = "http://lua-users.org/wiki/MetatableEvents">metatables</a></li>
+                            <li>Generous abstraction</li>
+                        </ul>
+                    <li>Python</li>
+                        <ul>
+                            <li>Often many people's first language due to how simple it is.</li>
+                            <li>Popular in code golfing.</li>
+                        </ul>
+                </ol>
+            </p>
+
+            <h2>Any Examples?</h2>
+            <p>
+                Yes! I do have a set of examples that I like showing.
+                <br>
+                
+                <h3>The Basic Factorial in Ruby</h3>
+                The factorial (!) of a number just represents the product sum of all whole numbers greater than zero below the given number. That is to say: <b>5! (5 factorial) = 5 * 4 * 3 * 2 * 1 = 120</b>
+                <br>
+                <br>
+                In ruby you can easily express the factorial of an inputted number by using a range and then calling a reducer method on it. 
+                <br>
+                <br>
+                <!-- use of pre tag requires me to indent like this -->
+                <pre>
+    <code>(<span class = "number">1</span>..</span><span class = "function">gets</span>.to_i).inject :*</span></code>
+                </pre>
+
+                <h3>Short Function Declarations in Lua</h3>
+                In lua you can define a function very simply. 
+                <br>
+                <pre>
+    <code><span class = "keyword">function</span> funcName(paramA, paramB, ...)
+    <span class = "comment">-- function body</span>
+<span class = "keyword">end</span>
+    </code>
+                </pre>
+
+                We can use the fact that lua has a <i>"load"</i> and <i>"loadstring"</i> method. "load" is shorter so we will use that. This allows us to define lua code as a string in lua and execute arbitrary code. We can abuse varadic parameter assignment to pass parameters to our function. Here is an example that could be used to just print all characters in a string. 
+                
+                <pre>
+    <code>(<span class = "string">"hello"</span>):gsub(<span class = "string">"."</span>,<span class = "function">load</span><span class = "string">"print(...)"</span>)
+    </code>
+                </pre>
+
+                This is a poor example though because if you wanted to just print out the characters in a string then you would just pass the "print" function itself rather than wrapping it in a function, but there are real reasons to do use "load"
+
+                <pre>
+    <code>(<span class = "string">"hello"</span>):gsub(<span class = "string">"."</span>,<span class = "function">print</span>)
+    </code>
+                </pre>
+
+                <h3>Abuse of Ternary for Control Flow in Lua</h3>
+
+                Abuse of ternary is very useful when you are golfing in Lua. Writing an "if else" statement is too long, so it becomes dire to find a shorter way to do two different things under different cases. 
+                <br>
+                <br>
+                Because of how Lua works, if the condition in an statement is true then further conditions do not need to be evaluated. This brings up interesting calling syntax. 
+
+                <br>
+                <br>
+                Below we have a useless variable assignment and upon "condition" evaluating to true the function "f" is called, else "g" is called. "g()" is never evaluated if "f()" is done, and vice versa. 
+                </br>
+                </br>
+                <pre>
+    <code>_=condition and f()or g()
+    </code>
+                </pre>
+            </p>
+            <h4>Extra External Resources</h4>
+            <a href = "https://www.lua.org/manual/5.3/">Lua 5.3 Manual</a>
+            <br>
+            <a href = "https://docs.python.org/3/">Python v3 Documentation</a>
+            <br>
+            <a href = "https://docs.ruby-lang.org/en/master/">Latest Ruby Documentation</a>
+        </div>
+    </body>
+</html>
