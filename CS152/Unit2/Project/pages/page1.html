@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Newton's Method</title>
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <script src="script.js"></script>
+
+        <a href = "../index.html">home</a>
+        <!-- <a href = "./page3.html">back</a> -->
+        <a href = "./page2.html">next</a>
+        <div class = "content">
+            <h1>Newton's Method</h1>
+            Written by Andrew McQueen <i>(2022amcqueen&#64;vg302.org)</i>
+
+            <h2>What is Newton's Method?</h2>
+            <p><b>Newton's Method</b> (also known as <b>Newton-Raphson Method</b>) is an iterative algorithm for finding the roots of functions. To put it in laymans terms, the more times we compute the next step of the algorithm, the closer we approximate the x-intercepts of a function.
+            <br>
+            <br>
+            <img src = "../files/newtonproof.png" class = "center">
+            <!-- <div class = "click-zoom">
+                <label>
+                    <input type = "checkbox">
+                    <img src = "../files/newtonproof.png">
+                </label>
+            </div> -->
+            <h2>How does it work?</h2>
+            The method works by using an initial guess which may or may not be close to the real answer. Any guess works, but accurate guesses decrease the amount of iterations that need to be done to get to a reasonable approximation. Then the x-intercept of the tangent of the function at the initial guess is calculated and that becomes the new guess. This process is repeated and in most situations will converge to the root of a function at infinite iterations. 
+            <br>
+            <br>
+            <img src = "../files/NewtonIteration_Ani.gif" class = "center">
+            <h2>How can I use it?</h2>
+            <p>Newton's Method is often applied to approximate the square roots of numbers. Without a calculator one might assume it is impossible to determine an answer to the question <i>"is two thirds larger than the square root of 7?"</i>
+            
+            <br>
+            <br>
+            We can begin by letting our <i>f(x)</i> be equal to <i>x</i> squared minus some constant greater than 0: 
+            <br>
+            <br>
+            <img src = "../files/x^2-a.png" class = "center"></img>
+            <br>
+            The reasoning behind this is that if you were to factor the function then you would be left with the equation: 
+            <br>
+            <br>
+            <img src = "../files/factor.png" class = "center"></img>
+            <br>
+            <br>
+            With our definition of <i>f</i> we can now get to using Newton's Method. We will want to find the derivative of <i>f</i> (denoted <i>f' &ndash;  f prime</i>). Application of the power rule can help us here.
+            <br>
+            <br>
+            <img src = "../files/derivative.png" class = "center"></img>
+            <br>
+            <br>
+            Now that we have <i>f</i> and <i>f'</i>, we can proceed to using Newton's Formula. We plug in our equations and simplify. 
+            <br>
+            <br>
+            <img src = "../files/newtonroot.png" class = "center"></img>
+            <br>
+            <br>
+            Now, given any number, we can approximate the square root of it by substituting that number for <i>a</i> in our simplified formula for the <i>nth x</i> term. 
+            <br>
+            <br>
+            Let's consider finding the square root of 2. Thus, let <i>a</i> be equal to 2. Our initial guess will be <i>1.5</i> since root 2 is probably around two thirds (1.5). We want to evaluate the first iteration: 
+            <br>
+            <br>
+            <img src = "../files/newtonroot1st.png" class = "center"></img>    
+            <br>
+            <br>
+            It is unlikely our new approximation is reasonably close to the real answer of root 2 yet, so we will preform a second iteration: 
+            <br>
+            <br>
+            <img src = "../files/newtonroot2nd.png" class = "center"></img>  
+            <br>
+            <br>
+            After two iterations we have most likely generated a good guess for the approximation of root 2. Infact, in our case, we were accurate up to 5 decimal places. The actual approximation of root 2 is <i>1.41421356</i>
+            </p>
+            <br>
+            <br>
+            <br>
+            <h3>Resources Used</h3>
+            <a href = "https://math.mit.edu/~stevenj/18.335/newton-sqrt.pdf">Square Roots via Newton’s Method</a>
+            <br>
+            <a href = "https://en.wikipedia.org/wiki/Newton%27s_method">Newton's method</a>
+            <br>
+            <a href = "https://latex2image.joeraut.com/">Latex2Image</a>
+            <br>
+            <a href = "https://quicklatex.com/">QuickLatex&#169;Pavel Holoborodko</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Gauss&ndash;Seidel method</title>
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <script src="script.js"></script>
+
+        <a href = "../index.html">home</a>
+        <a href = "./page1.html">back</a>
+        <a href = "./page3.html">next</a>
+        <div class = "content">
+            <h1>Gauss&ndash;Seidel Method</h1>
+            Written by Andrew McQueen <i>(2022amcqueen&#64;vg302.org)</i>
+            <h2>What is the Gauss&ndash;Seidel Method?</h2>
+            <p>
+                <i>Much of this content is straight from the Wikipedia page. There is great resources and valuable information on the article. </i>
+                <br>
+                <br>
+                <b>Gauss&ndash;Seidel</b> is an iterative method for solving square systems of linear equations. This method is similar to the <a href = "https://en.wikipedia.org/wiki/Jacobi_method">Jacobian Method</a>.
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/8b694a1c71c794c3758ebe45634e39d09d6d6011" class = "center">
+            </p>
+            <h2>How does it work?</h2>
+            <p>
+                Consider a linear system given by <b>Ax = b</b>
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/b27b11eea7dcf426694f15f5ce6d2988bcc1328f" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/7a365bbe27115afa832f96e50a7fd8dbf5bf5b18" class = "center">
+                <br>
+                <br>
+                To solve this system we will use the equation: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/b938133547ed264ec456ecf64c164873164ed7cf" class = "center">
+                <br>
+                <br>
+                But first we need to use its form: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/5815855c28d0f03d019e2662ad2f74aa20fca8ce" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/499e65fdc0563093db6f0d135a9fa0f135e31d0b" class = "center">
+                <img src = 'https://wikimedia.org/api/rest_v1/media/math/render/svg/07bfa5ff410e80c64664b0126cba0a878385c266' class = "center">
+                <br>
+                <br>
+                We will decompose matrix <b>A</b> into a sum of two triangular matrices with <b>L<sub>*</sub></b> representing the lower half and <b>U</b> representing the upper half. 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/993232d8ad4fdfaeff1daf458a598bfdb6ebf20d" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/91e93490f693487e724c8d30775f138d6137597a" class = "center">
+                <br>
+                <br>
+                The inverse of <b>L<sub>*</sub></b> is given by: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/d4650e3ffbdf88ac025e58c325b2f436168801f6" class = "center">
+                <br>
+                <br>
+                Now we can plug in values to solve for <b>T</b> and <b>C</b>: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/89cf9813834155886835404383eeb4b44c7465e4" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/a7dcbd4c07b9274de6c7648ecdce6b8750087af3" class = "center">
+                <br>
+                <br>
+                With all of our variables, we can now compute iterations of <b>x</b>. Better guesses of <b>x<sup>(0)</sup></b> will result in less iterations to converge to a more accurate result. Consider the guess: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/68d0295474f1320ed87526e067a2d6049ac5f09e" class = "center">
+                <br>
+                <br>
+                Then we may compute <b>x<sup>(1)</sup></b> as: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/dc9a7883689319a1b82d9c23b33bf78bc57ed4b7" class = "center">
+                <br>
+                <br>
+                And then following iterations as: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/515baeaf2b0bf45d6608e2654d4a46cc66ede318" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/515baeaf2b0bf45d6608e2654d4a46cc66ede318" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/2a292c704d1aca20fade7aa689b911f2a0d5dfa7" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/daa6bb8fc2a6d8cde5e101a4d3d62d45faddc425" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/82cb7207ca43e3f7254cc748b6887d3e82e89947" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/56e63c683b190afa5da93fcc95652c5f64f30b5d" class = "center">
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/eea1ffbb81a7477d8244b359bdebb8821230d15e" class = "center">
+                <br>
+                <br>
+                And as expected we have converged to the appoximate solution of <b>x</b>: 
+                <br>
+                <br>
+                <img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/d7177aa2a367c771a7f040b7a08c869be2d36ce9" class = "center">
+            </p>
+            <br>
+            <br>
+            <br>
+            <h3>Resources Used</h3>
+            <a href = "https://en.wikipedia.org/wiki/Gauss%E2%80%93Seidel_method">Gauss&ndash;Seidel method</a>
+        </div>
+    </body>
+</html>
