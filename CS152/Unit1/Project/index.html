@@ -71,23 +71,17 @@
                 <pre>
     <code><span class = "keyword">function</span> funcName(paramA, paramB, ...)
     <span class = "comment">-- function body</span>
-<span class = "keyword">end</span>
-    </code>
-                </pre>
+<span class = "keyword">end</span></code></pre>
 
                 We can use the fact that lua has a <i>"load"</i> and <i>"loadstring"</i> method. "load" is shorter so we will use that. This allows us to define lua code as a string in lua and execute arbitrary code. We can abuse varadic parameter assignment to pass parameters to our function. Here is an example that could be used to just print all characters in a string. 
                 
                 <pre>
-    <code>(<span class = "string">"hello"</span>):gsub(<span class = "string">"."</span>,<span class = "function">load</span><span class = "string">"print(...)"</span>)
-    </code>
-                </pre>
+    <code>(<span class = "string">"hello"</span>):gsub(<span class = "string">"."</span>,<span class = "function">load</span><span class = "string">"print(...)"</span>)</code></pre>
 
                 This is a poor example though because if you wanted to just print out the characters in a string then you would just pass the "print" function itself rather than wrapping it in a function, but there are real reasons to do use "load"
 
                 <pre>
-    <code>(<span class = "string">"hello"</span>):gsub(<span class = "string">"."</span>,<span class = "function">print</span>)
-    </code>
-                </pre>
+    <code>(<span class = "string">"hello"</span>):gsub(<span class = "string">"."</span>,<span class = "function">print</span>)</code></pre>
 
                 <h3>Abuse of Ternary for Control Flow in Lua</h3>
 
@@ -102,9 +96,7 @@
                 </br>
                 </br>
                 <pre>
-    <code>_=condition and f()or g()
-    </code>
-                </pre>
+    <code>_=condition and f()or g()</code></pre>
             </p>
             <h4>Extra External Resources</h4>
             <a href = "https://www.lua.org/manual/5.3/">Lua 5.3 Manual</a>
