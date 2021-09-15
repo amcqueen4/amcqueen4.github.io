@@ -1,6 +1,6 @@
 .content {
     width: 50%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     text-align: justify;
     text-justify: inter-word;
@@ -15,6 +15,12 @@ blockquote {
     display: block;
     margin: auto;
     max-width: 100%
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+=======
+>>>>>>> origin/main
 }
 
 /* .click-zoom input[type=checkbox] {
@@ -31,3 +37,7 @@ blockquote {
   transform: scale(1.5);
   cursor: zoom-out
 } */
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+>>>>>>> origin/main
