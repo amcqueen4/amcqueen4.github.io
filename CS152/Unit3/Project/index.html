@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Unit 3 Project</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <a href = "../">back</a>
+        <script src="script.js"></script>
+        <header>
+            <h1>Dynamic Image Gallery</h1>
+        </header>
+        <main>
+            <hr>
+            <h2>Cats</h2>
+            <picture>
+                <source media = "(min-width:796px)" srcset = "images/cat1.jpg">
+                <source media = "(min-width:426px)" srcset = "images/cat2.jpg">
+                <source media = "(min-width:321px)" srcset = "images/cat3.jpg">
+                <img src = "images/cat4.jpg" alt = "cats!!1" height = "200" width = "200">
+            </picture>
+
+            <hr>
+
+            <h2>Hypercomplex & Higher Dimension Shapes</h2>
+            <!-- https://en.wikipedia.org/wiki/Hypercomplex_number if you are interested in what the quaternion, octonion, and sedenion are.  -->
+            <picture>
+                <source media = "(min-width:796px)" srcset = "images/shape1.gif">
+                <source media = "(min-width:426px)" srcset = "images/shape2.png">
+                <source media = "(min-width:321px)" srcset = "images/shape3.png">
+                <img src = "images/shape4.gif" alt = "" height = "200" width = "200">
+            </picture>
+
+            <hr>
+
+            <h2>Space</h2>
+            <picture>
+                <source media = "(min-width:796px)" srcset = "images/space1.jpg">
+                <source media = "(min-width:426px)" srcset = "images/space2.jpg">
+                <source media = "(min-width:321px)" srcset = "images/space3.jpg">
+                <img src = "images/space4.jpg" alt = "" height = "200" width = "200">
+            </picture>
+        </main>
+
+        <br>
+        <footer>&copy; Andrew McQueen</footer>
+    </body>
+</html>

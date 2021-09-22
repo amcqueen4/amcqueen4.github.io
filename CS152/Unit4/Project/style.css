@@ -1,0 +1,43 @@
+body {
+    background-color: azure;
+    width: 80%;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+footer {
+    background-color: burlywood;
+    color: black;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+    color: green;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: plum;
+    color: black
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blue;
+    color: azure;
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: red;
+    color: blue
+}
