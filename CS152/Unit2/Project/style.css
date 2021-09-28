@@ -14,13 +14,7 @@ blockquote {
 .center {
     display: block;
     margin: auto;
-    max-width: 100%
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
-=======
->>>>>>> origin/main
+    max-width: 100%;
 }
 
 /* .click-zoom input[type=checkbox] {
@@ -37,7 +31,3 @@ blockquote {
   transform: scale(1.5);
   cursor: zoom-out
 } */
-<<<<<<< HEAD
->>>>>>> origin/main
-=======
->>>>>>> origin/main
