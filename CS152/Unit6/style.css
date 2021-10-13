@@ -1,0 +1,29 @@
+.below {
+    height: 300px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+#borderimg {
+    background-color: beige;
+    color: cadetblue;
+    border: 100px solid transparent;
+    border-image: url("./imgs/chezburg-hd.png") 100% round;
+}
+
+body {
+    background-image: url("./imgs/chomp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-image: url("./imgs/chezburg.png")
+}
