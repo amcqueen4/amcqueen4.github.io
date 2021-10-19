@@ -1,0 +1,50 @@
+body{
+  width:1200px;
+  font-size: 0;
+}
+div{
+  position: relative;
+}
+/*
+Add your CSS to the ID selectors below
+*/
+#statue{}
+
+#ball{
+    position: absolute;
+    margin: 10px;
+    padding: 10px 13px;
+}
+
+#turnip{
+    position: absolute;
+    margin: 0px;
+    padding: 266px 297px;
+}
+
+#farm{}
+
+#grass{
+    position: absolute;
+    margin: 0px;
+    padding: 266px 493px;
+}
+
+#tetris{}
+
+#L{
+    position: absolute;
+    margin: 0px;
+    padding: 1700px 100px;
+}
+#T{
+    position: absolute;
+    margin: 0px;
+    padding: 1800px 500px;
+}
+
+#I{
+    position: absolute;
+    margin: 0px;
+    padding: 1700px 1000px;
+}
