@@ -1,0 +1,48 @@
+/* Create a separate HTML file for each exercise.  Make sure to apply the css to an appropriate element to make sure it works.
+
+1. Write the CSS for an id with the following attributes: float to the left of the page, light tan background, Verdana or sans-serif large font, and 20 pixels of padding.
+2. Write the CSS to configure a class that will produce a headline with a dotted line underneath it. Choose a color that you like for the text and dotted line.
+3. Write the CSS for an id that will be absolutely positioned on a page 20 pixels from the top and 40 pixels from the right. This area should have a light gray background and a solid border.
+4. Write the CSS for a class that is relatively positioned. This class should appear 15 ­pixels in from the left. Configure the class to have a light green background.
+5. Write the CSS for an id with the following characteristics: fixed position, light gray background color, bold font weight, and 10 pixels of padding.
+6. Write the CSS to configure an image file named myimage.gif as the list marker in an unordered list. */
+
+#ex_1 {
+    float: left;
+    background-color: tan;
+    font: sans-serif large;
+    padding: 20px;
+}
+
+.ex_2 {
+    border-color: rebeccapurple;
+    border-bottom-style: dotted;
+    border-width: 10
+}
+
+#ex_3 {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    background-color: gray;
+    border: solid;
+}
+
+.ex_4 {
+    left: 15px;
+    position: relative;
+    background-color: lightgreen;
+}
+
+#ex_5 {
+    position: fixed;
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.ex_6 {
+    list-style-image: url("./myimage.gif");
+    list-style-type: square;
+    padding-left: 50%;
+}
