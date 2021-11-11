@@ -1,0 +1,16 @@
+@media print {
+    img {
+        display: none;
+    }
+
+    body {
+        font-size: 1.25em;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")"
+    }
+
+    #nav { display: none }
+    #sidebar { display: none }
+}
