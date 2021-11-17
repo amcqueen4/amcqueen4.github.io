@@ -70,6 +70,28 @@ footer { background-color: #FFFFCC;
     }
 
     nav {
+        margin: auto;
+        float: none;
+        width: 100%;
+    }
+
+    li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        background-image: none;
+        font-size: 200%;
+        width: 100%;
+        padding: 10% 0 0 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* nav {
         padding-bottom: 50px;
         float: none;
         width: 100%; 
@@ -82,12 +104,13 @@ footer { background-color: #FFFFCC;
 
     nav li {
         float: left;
+        display: block;
         background-color: #F4E8BC;
     }
 
-    nav li a {
+    a {
         display: block;
-    }
+    } */
 
     img {
         width: 100%;
@@ -103,5 +126,9 @@ footer { background-color: #FFFFCC;
     footer {
         margin-left: 0px;
         padding: 0px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
     }
 }
